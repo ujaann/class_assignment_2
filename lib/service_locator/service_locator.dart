@@ -1,4 +1,5 @@
 import 'package:class_assignment_2/bloc/dashboard_bloc.dart';
+import 'package:class_assignment_2/bloc/simple_interest_bloc.dart';
 import 'package:get_it/get_it.dart';
 
 final serviceLocator = GetIt.instance;
@@ -8,5 +9,6 @@ void initDependencies() {
 }
 
 void _initBloc() {
-  serviceLocator.registerLazySingleton(() => DashboardBloc());
+  serviceLocator.registerLazySingleton(() => SimpleInterestBloc());
+  serviceLocator.registerLazySingleton(() => DashboardBloc(serviceLocator()));
 }
