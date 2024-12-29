@@ -9,7 +9,7 @@ class DashboardView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Bloc Dashboard'),
+        title: const Text('Ujan Bloc Dashboard'),
         centerTitle: true,
       ),
       body: GridView(

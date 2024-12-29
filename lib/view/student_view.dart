@@ -34,6 +34,7 @@ class StudentViewState extends State<StudentView> {
             const SizedBox(height: 8),
             TextField(
               controller: _ageControl,
+              keyboardType: TextInputType.numberWithOptions(),
               decoration: InputDecoration(
                   border: OutlineInputBorder(), hintText: "age"),
             ),
