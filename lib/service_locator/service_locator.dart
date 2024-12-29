@@ -1,3 +1,4 @@
+import 'package:class_assignment_2/bloc/area_circle_bloc.dart';
 import 'package:class_assignment_2/bloc/dashboard_bloc.dart';
 import 'package:class_assignment_2/bloc/simple_interest_bloc.dart';
 import 'package:get_it/get_it.dart';
@@ -10,5 +11,7 @@ void initDependencies() {
 
 void _initBloc() {
   serviceLocator.registerLazySingleton(() => SimpleInterestBloc());
-  serviceLocator.registerLazySingleton(() => DashboardBloc(serviceLocator()));
+  serviceLocator.registerLazySingleton(() => AreaCircleBloc());
+  serviceLocator.registerLazySingleton(
+      () => DashboardBloc(serviceLocator(), serviceLocator()));
 }
