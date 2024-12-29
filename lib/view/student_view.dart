@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AreaCircleView extends StatelessWidget {
-  const AreaCircleView({super.key});
+class StudentView extends StatelessWidget {
+  const StudentView({super.key});
 
   @override
   Widget build(BuildContext context) {

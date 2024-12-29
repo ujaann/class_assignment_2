@@ -1,16 +1,8 @@
 import 'package:class_assignment_2/app.dart';
+import 'package:class_assignment_2/service_locator/service_locator.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return App();
-  }
+  initDependencies();
+  runApp(const App());
 }
